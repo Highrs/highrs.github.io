@@ -19,18 +19,24 @@
   .panel {
     display: block;
     margin: auto;
-    top: 50%;
-    position: relative;
-    transform: translateY(10%);
-    background: #1a1a1a;
+    left: 50%;
+    top: 5%;
+    position: absolute;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    background: #252525;
   }
   .box {
     stroke: #00ff66ff;
     fill: #1a1a1a;
     stroke-width: 2px;
   }
-  .box:hover {
+  .button {}
+  .button:hover .box {
     stroke: #ffcc00ff;
+  }
+  .button:hover .text {
+    fill: #ffcc00ff;
   }
   .text {
     fill: #00ff66ff;
@@ -44,13 +50,16 @@
 <body>
 <div class="content">
 <svg class="panel" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="600" version="1">
-<text class="text" x="55" y="60"<tspan>WELCOME, FELLOW TOASTER</tspan></text>
-<text class="text" x="55" y="120"<tspan>HOW ABOUT A GAME OF</tspan></text>
-<text class="text" x="230" y="180"<tspan>?</tspan></text>
-<a xlink:href="https://higrs.com/chess/">
-    <rect class="box" x="50" y="130" width="175" height="60"/>
-    <text class="text" x="55" y="180"<tspan>CHESS</tspan></text>
-</a>
-</dev>
+<g transform="translate(50,50)">
+  <text class="text" x="5" y="10"<tspan>WELCOME, FELLOW TOASTER</tspan></text>
+  <text class="text" x="5" y="70"<tspan>HOW ABOUT A GAME OF</tspan></text>
+  <text class="text" x="180" y="130"<tspan>?</tspan></text>
+  <g class="button" transform="translate(0,80)">
+    <a xlink:href="https://higrs.com/chess/">
+      <rect class="box" x="0" y="0" width="175" height="60"/>
+      <text class="text" x="5" y="50"<tspan>CHESS</tspan></text>
+    </a>
+  </g>
+</g>
 </body>
 </html>
