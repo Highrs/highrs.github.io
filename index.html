@@ -24,7 +24,7 @@
     position: absolute;
     transform: translateY(-50%);
     transform: translateX(-50%);
-    background: #252525;
+    background: #1a1a1a;
   }
   .box {
     stroke: #00ff66ff;
@@ -44,17 +44,25 @@
     font: 50px B612 Mono;
     user-select: none;
   }
+  .line {
+    stroke: #00ff66ff;
+    stroke-width: 3px;
+  }
 
 </style>
 </head>
 <body>
 <div class="content">
 <svg class="panel" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="600" version="1">
-<g transform="translate(50,50)">
-  <text class="text" x="5" y="10"<tspan>WELCOME, FELLOW TOASTER</tspan></text>
-  <text class="text" x="5" y="70"<tspan>HOW ABOUT A GAME OF</tspan></text>
-  <text class="text" x="180" y="130"<tspan>?</tspan></text>
-  <g class="button" transform="translate(0,80)">
+<g transform="translate(35,35)">
+  <path class="line" d="m0 -100 v 1000"/>
+  <path class="line" d="m-100 0 1000 0"/>
+</g>
+<g transform="translate(55,90)">
+  <text class="text" x="0" y="0"<tspan>WELCOME, FELLOW TOASTER</tspan></text>
+  <text class="text" x="0" y="60"<tspan>HOW ABOUT A GAME OF</tspan></text>
+  <text class="text" x="180" y="120"<tspan>?</tspan></text>
+  <g class="button" transform="translate(-5,70)">
     <a xlink:href="https://higrs.com/chess/">
       <rect class="box" x="0" y="0" width="175" height="60"/>
       <text class="text" x="5" y="50"<tspan>CHESS</tspan></text>
