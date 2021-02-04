@@ -2,10 +2,11 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>HIGRS</title>
-  <style type="text/css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=B612+Mono&display=swap" rel="stylesheet">
+  <title>HIGRS</title>
+  <style type="text/css">
+
   html, body {
     background: #1a1a1a;
     height: 100%;
@@ -23,10 +24,13 @@
     transform: translateY(10%);
     background: #1a1a1a;
   }
-  .greyBox {
+  .box {
     stroke: #00ff66ff;
     fill: #1a1a1a;
     stroke-width: 2px;
+  }
+  .box:hover {
+    stroke: #ffcc00ff;
   }
   .text {
     fill: #00ff66ff;
@@ -44,7 +48,7 @@
 <text class="text" x="55" y="120"<tspan>HOW ABOUT A GAME OF</tspan></text>
 <text class="text" x="230" y="180"<tspan>?</tspan></text>
 <a xlink:href="https://higrs.com/chess/">
-    <rect class="greyBox" x="50" y="130" width="175" height="60"/>
+    <rect class="box" x="50" y="130" width="175" height="60"/>
     <text class="text" x="55" y="180"<tspan>CHESS</tspan></text>
 </a>
 </dev>
