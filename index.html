@@ -31,7 +31,9 @@
     fill: #1a1a1a;
     stroke-width: 2px;
   }
-  .button {}
+  .button {
+
+  }
   .button:hover .box {
     stroke: #ffcc00ff;
   }
@@ -54,18 +56,26 @@
 <body>
 <div class="content">
 <svg class="panel" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90%" height="90%" version="1">
-<g transform="translate(35,35)">
+<g transform="translate(30,30)">
   <path class="line" d="m0 -100 v 10000"/>
   <path class="line" d="m-100 0 10000 0"/>
+  <path class="line" d="m-100 80 10000 0"/>
+  <path class="line" d="m-100 240 10000 0"/>
 </g>
-<g transform="translate(55,90)">
-  <text class="text" x="0" y="0"<tspan>WELCOME, FELLOW TOASTER</tspan></text>
-  <text class="text" x="0" y="60"<tspan>HOW ABOUT A GAME OF</tspan></text>
-  <text class="text" x="180" y="120"<tspan>?</tspan></text>
-  <g class="button" transform="translate(-5,70)">
+<g transform="translate(50,90)">
+<text class="text" x="0" y="0"<tspan>WELCOME, FELLOW TOASTER</tspan></text>
+</g>
+<g transform="translate(40, 120)">
+  <g class="button" transform="translate(0,0)">
     <a xlink:href="https://higrs.com/chess/">
       <rect class="box" x="0" y="0" width="175" height="60"/>
       <text class="text" x="5" y="50"<tspan>CHESS</tspan></text>
+    </a>
+  </g>
+  <g class="button" transform="translate(0,80)">
+    <a xlink:href="https://higrs.com/chess/">
+      <rect class="box" x="0" y="0" width="175" height="60"/>
+      <text class="text" x="5" y="50"<tspan>SPACE</tspan></text>
     </a>
   </g>
 </g>
